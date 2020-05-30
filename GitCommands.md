@@ -37,5 +37,5 @@ $ git push --delete origin branchName
 # Undo a edited file
 $ git checkout -- fileName
 # Undo edited files
-$ git checkout -- . (edited) 
+$ git checkout -- . 
 ```
