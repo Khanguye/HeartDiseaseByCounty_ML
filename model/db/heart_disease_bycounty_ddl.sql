@@ -15,7 +15,7 @@ CREATE TABLE "Heart_Disease_Mortality_County" (
 CREATE TABLE "Population_State_County" (
 	"State"	TEXT,
 	"County"	TEXT,
-	"POP_ESTIMATE"	TEXT,
+	"POP_ESTIMATE"	INTEGER,
 	PRIMARY KEY("State","County")
 );
 
