@@ -1,5 +1,8 @@
 # Heart Disease By County ML
 
+### Git Hub Team Collaboration
+--- 
+
 **Git Setup:**
 
 - The master branch is protected from pushing directly
