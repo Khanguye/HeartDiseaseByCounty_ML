@@ -1,12 +1,12 @@
 SELECT 
-pofsc.*, hdmsc.Rate_100000, hdmsc.Rate_Level, psc.POP_ESTIMATE
+fsc.*, hdmsc.Rate, hdmsc.Level, psc.PopEst
 FROM 
-Heart_Disease_Mortality_State_County hdmsc
+Heart_Disease_Mortality_State_Counties hdmsc
 INNER JOIN State s
-ON s.Code = hdmsc.StateCode
-INNER JOIN (Physical_Other_Features_State_County pofsc, Population_State_County psc)
-ON (pofsc.StateName = s.Name AND psc.StateCode = s.Code)
-WHERE hdmsc.County = pofsc.County
-AND pofsc.County = psc.County;
+ON s.Code = hdmsc.State_Code
+INNER JOIN (Features_State_Counties fsc, Population_State_Counties psc)
+ON (fsc.State_Name = s.Name AND psc.State_Code = s.Code)
+WHERE hdmsc.County = fsc.County
+AND fsc.County = psc.County;
 
 
