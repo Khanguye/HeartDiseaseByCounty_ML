@@ -1,8 +1,9 @@
 ## Common Git Commands in a team group collaboration
 
 ** Note: **
-1- Never edit the master branch (Master is blocked to push directly)
-2- After the merge request to master is completed, we regularly detele the remote branch and recreate a new branch from master
+
+1. Never edit the master branch (Master is blocked to push directly)
+2. After the merge request to master is completed, we regularly detele the remote branch and recreate a new branch from master
 
 ```python
 # Clone
