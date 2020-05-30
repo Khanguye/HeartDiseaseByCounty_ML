@@ -1,5 +1,15 @@
 # Heart Disease By County ML
 
+### Team Communication: Agile Methodology 
+---
+
+![Agile Diagram](https://www.openxcell.com/wp-content/uploads/2020/02/Agile_Diagram.png)
+[https://www.openxcell.com/blog/agile-methodology-important-start/](https://www.openxcell.com/blog/agile-methodology-important-start/)
+
+- Private Slack Channel
+- https://app.zenhub.com (Open New Feature and Tracking Issue)
+- Github for repository
+
 ### Git Hub Team Collaboration
 --- 
 
