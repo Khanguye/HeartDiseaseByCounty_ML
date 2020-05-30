@@ -4,7 +4,7 @@ CREATE TABLE "State" (
 	PRIMARY KEY("Code")
 );
 
-CREATE TABLE "Heart_Disease_Mortality_State_Counties" (
+CREATE TABLE "Heart_Disease_Mortality_State_County" (
 	"StateCode"	TEXT,
 	"County"	TEXT,
 	"Rate_100000"	NUMERIC,
