@@ -1,26 +1,26 @@
-CREATE TABLE "State_symbol" (
-	"StateName"	TEXT,
-	"Symbol"	TEXT,
-	PRIMARY KEY("Symbol")
+CREATE TABLE "State" (
+	"Name"	TEXT,
+	"Code"	TEXT,
+	PRIMARY KEY("Code")
 );
 
-CREATE TABLE "Heart_Disease_Mortality_County" (
-	"State"	TEXT,
+CREATE TABLE "Heart_Disease_Mortality_State_Counties" (
+	"StateCode"	TEXT,
 	"County"	TEXT,
 	"Rate_100000"	NUMERIC,
 	"Rate_Level"	INTEGER,
-	PRIMARY KEY("State","County")
+	PRIMARY KEY("StateCode","County")
 );
 
 CREATE TABLE "Population_State_County" (
-	"State"	TEXT,
+	"StateCode"	TEXT,
 	"County"	TEXT,
 	"POP_ESTIMATE"	INTEGER,
-	PRIMARY KEY("State","County")
+	PRIMARY KEY("StateCode","County")
 );
 
-CREATE TABLE "Features_County" (
-	"State"	TEXT,
+CREATE TABLE "Physical_Other_Features_State_County" (
+	"StateName"	TEXT,
 	"County"	TEXT,
 	"Percent_Fair_or_Poor_Health"	INTEGER,
 	"Average_Number_of_Physically_Unhealthy_Days"	REAL,
@@ -51,5 +51,5 @@ CREATE TABLE "Features_County" (
 	"Percent_Adults_with_Diabetes"	INTEGER,
 	"Percent_Limited_Access_to_Healthy_Foods"	INTEGER,
 	"Median_Household_Income"	INTEGER,
-	PRIMARY KEY("State","County")
+	PRIMARY KEY("StateName","County")
 );
