@@ -30,7 +30,7 @@ $ git push
 $ git push origin yourBranchName
 # After pull merge request is completed (GitHub UI process)
 # Sync local branches and remote branches
-$ git fectch --all --prune
+$ git fetch --all --prune
 # Delete the local branch manually
 $ git branch -d branchName
 # Push the delete branch to remote
