@@ -6,7 +6,7 @@ This project focuses on Heart Disease in the United States. Specifically, it att
 We chose this topic because of the wde availability of reliable, sourced data as well as some personal connections to heart disease. We hope that we may learn some insightful results regarding the disease prevelance and the factors which surround it.
 
 # Source Data
- The majority of our data are from the County Health and Rankings Roadmaps, a collaboration between the University of Wisconsin and the Robert Woods foundation. The raw data can be found here: https://www.countyhealthrankings.org/explore-health-rankings/rankings-data-documentation. The data outlines various health, life-style and environmental metrics by county in the United States. Some examples of these measures includes Adult Smoking Prevelance, Adult Obesity Prevelance, Education Rankings, Excessive Drinking, and others. 
+ The majority of our data are from the 'County Health and Rankings Roadmap', a collaboration between the University of Wisconsin and the Robert Woods foundation. The raw data can be found here: https://www.countyhealthrankings.org/explore-health-rankings/rankings-data-documentation. Its original purpose was to rank each county in the United STates by teh health quality of its residents. For our purposes, the data outlines various health, life-style and environmental metrics by county in the United States. Some examples of these measures includes Adult Smoking Prevelance, Adult Obesity Prevelance, Education Rankings, Excessive Drinking, and others. 
 
 According to the data compilers, it was sourced from various sources, primarily government agencies. 
 
@@ -33,6 +33,8 @@ Uniform Crime Reporting - FBI
 Environmental Public Health Tracking Network
 Safe Drinking Water Information System
 Comprehensive Housing Affordability Strategy (CHAS) data
+
+In trying to model the georgraphic presence of heart disease, we are analyzing several features. These include:
 
 Full Feature List:
 Percent_Fair_or_Poor_Health
@@ -66,20 +68,32 @@ Median_Household_Income
 
 The raw data provided more features than these, but we deemed some irrelevant to the questions we wanted to ask.
 
- Additionally, we augmented to these data by including county population. These data were sourced from the USDA Economic Reaearch Service.
+ Additionally, we augmented to these data by including county population and median household income. These data were sourced from the USDA Economic Research Service.
+
+ # Design
+
+For conceptual purposes, our team developed an Entity Relationship Diagram to clearly demonstrate how our source data relate to one another. This diagram can be seen here:
+
+![HeartDisease_StateCounty.png](model/diagram/HeartDisease_StateCounty.png)
+
+The primary key which binds all the source data together is State Code, a two letter abbreviation for each state joined with the respective counties. The individual tables are three raw data tables and one mapping table. The mapping table is used to tie a State name to its code (primary key). The raw data files have the features the model is investigating, and the heart disease rates by state.
+
+The foreign key relationship is not show because of the incompleteness of some data sources. The database is still in development phase and this can be amended as the model progresses.
+
+
+# Technology Reference
+
+[technology.md](technology.md)
 
 # Question to Investigate
 
-    1. Which factors are most significant in Heart Disease prevelance?
+    1. Which factors are most significant in Heart Disease mortality in the U.S>?
 
         1a.Are environmental, lifestyle or health measures more impactful?
 
     2.Which areas of the country suffer greatest with respect to heart disease?
 
-        2a. Which counties fair better?
-
-
-
+        2a. Which counties fair better and why?
 
 
 ### Team Communication: Agile Methodology 
@@ -104,7 +118,7 @@ The raw data provided more features than these, but we deemed some irrelevant to
 
 **Git Commands:**
 
-Refer: [Git Common Commands](Git Commands.md)
+Refer: [Git Common Commands](GitCommands.md)
 
 - Create a new feature branch
 
