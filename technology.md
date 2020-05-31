@@ -1,6 +1,6 @@
 # Technologies Used
 ## Data Cleaning and Analysis
-Excel was used for initial, but brief, data cleaning. This was mainly done because the needed tranformations for Excel specific, namely unmerging cells. Pandas will be used to clean the data and perform an exploratory analysis within Jupyter Notebooks. Further analysis will be completed using Python.
+Excel was used for initial, but brief, data cleaning. This was mainly done because the needed tranformations for Excel specific, namely unmerging cells. After this initial cleaning, we converterd the files to csv files before reading into Notebooks. Pandas will be used to clean the data and perform an exploratory analysis within Jupyter Notebooks. Further analysis will be completed using Python.
 
 ## Database Storage
 Our project utilizes SQLite as our relation database and query system. This is because our data is neither large nor do we need our data consumers to necessarily view it. 
