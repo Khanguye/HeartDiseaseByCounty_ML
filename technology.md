@@ -10,5 +10,3 @@ We will be using SciKitLearn as our machine learning library. Specifically, we w
 
 ## Dashboard
 Given our data is in xls form, Tableau is the best option for our dashboard. Tableau works well with maps and will be user friendly when trying to highlight the sverity of heart disease in particular counties.
-
-Update.
