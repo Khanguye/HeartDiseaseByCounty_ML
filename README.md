@@ -1,5 +1,29 @@
 # Heart Disease By County ML
 
+# Topic
+This project focuses on Heart Disease in the United States. Specifically, it attempts to predict the likeliehood of heart disease mortality by county. We developed a Machine-Learning model using a Random Forest Classisifer to make the prediction. Additionally, our model will rank the various features in the dataset by the impact on heart disease.
+
+We chose this topic because of the wde availability of reliable, sourced data as well as some personal connections to heart disease. We hope that we may learn some insightful results regarding the disease prevelance and the factors which surround it.
+
+# Source Data
+ County Health and Rankings Roadmaps, a collaboration between the University of Wisconsin and the Robert Woods foundation. The raw data can be found here: https://www.countyhealthrankings.org/explore-health-rankings/rankings-data-documentation. The data outlines various health, life-style and environmental metrics by county in the United States. Some examples of these measures includes Adult Smoking Prevelance, Adult Obesity Prevelance, Education Rankings, Excessive Drinking, and others. 
+ 
+  The data itself is sourced from various sources, primarily government agencies. All of these details can be found under the 'Ranked Measure and Sources and Years' tab.
+
+# Question to Investigate
+
+Which factors are most significant Heart Disease prevelance?
+
+    Are environmental, lifestyle or health measures more impactful?
+
+Which areas of the country suffer greatest with respect to heart disease?
+
+    Which counties fair better?
+
+
+
+
+
 ### Team Communication: Agile Methodology 
 ---
 
