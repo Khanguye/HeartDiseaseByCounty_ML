@@ -21,7 +21,7 @@ These metrics are determined by the model to be the most significant in predicti
 
 ![Physical_Inactivity.PNG](Physical_Inactivity.PNG)
 
-![Food_Environ.png](Food_Environ.PNG)
+![Food_Environ.png](Food_Environ.png)
 
 
 # Additional Visualizations
