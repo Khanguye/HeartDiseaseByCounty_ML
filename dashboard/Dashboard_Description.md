@@ -11,8 +11,6 @@ The user interaction comes in the form of pop-up markers. A user can click on a 
 
 These metrics are determined by the model to be the most significant in predicting heart disease mortality rates.
 
-![Rankings_Map.PNG](Rankings_Map.PNG)
-
 ![Mortality.png](Mortality.png)
 
 ![Median_Household_Income.PNG](Median_Household_Income.PNG)
