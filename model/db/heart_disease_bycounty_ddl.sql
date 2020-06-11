@@ -96,5 +96,8 @@ CREATE TABLE "Features_State_Counties" (
 	"College_or_associates" INTEGER,
 	"Bachelor_degree_or_higher" INTEGER,
 	"Unreported_education" INTEGER,
+	"Largest_sector" TEXT, 
+	"Avg_Temp_C" REAL,
+	"Avg_Precipitation_Inches" REAL,
 	PRIMARY KEY("State_Name","County")
 );
