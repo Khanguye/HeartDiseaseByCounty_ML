@@ -21,6 +21,8 @@ These metrics are determined by the model to be the most significant in predicti
 
 ![Food_Environ.png](Food_Environ.png)
 
+# Link to Dashboard
+https://public.tableau.com/profile/matt.root#!/vizhome/Heart_Disease_Features/Dashboard1?publish=yes
 
 # Additional Visualizations
 
