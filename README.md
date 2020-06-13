@@ -1,11 +1,13 @@
 # Heart Disease By County ML
 
-# Topic
+# Project Outline
+
+## Topic
 This project focuses on Heart Disease in the United States. Specifically, it attempts to predict the likeliehood of heart disease mortality by county. We developed a Machine-Learning model using a Random Forest Classisifer to make the prediction. Additionally, our model will rank the various features in the dataset by the impact on heart disease.
 
 We chose this topic because of the wde availability of reliable, sourced data as well as some personal connections to heart disease. We hope that we may learn some insightful results regarding the disease prevelance and the factors which surround it.
 
-# Source Data
+## Source Data
  The majority of our data are from the 'County Health and Rankings Roadmap', a collaboration between the University of Wisconsin and the Robert Woods foundation. The raw data can be found here: https://www.countyhealthrankings.org/explore-health-rankings/rankings-data-documentation. Its original purpose was to rank each county in the United STates by teh health quality of its residents. For our purposes, the data outlines various health, life-style and environmental metrics by county in the United States. Some examples of these measures includes Adult Smoking Prevelance, Adult Obesity Prevelance, Education Rankings, Excessive Drinking, and others. 
 
 According to the data compilers, it was sourced from various sources, primarily government agencies. 
@@ -65,12 +67,15 @@ Percent_Long_Commute
 Percent_Adults_with_Diabetes	
 Percent_Limited_Access_to_Healthy_Foods	
 Median_Household_Income
+Average Temperature
 
 The raw data provided more features than these, but we deemed some irrelevant to the questions we wanted to ask.
 
  Additionally, we augmented to these data by including county population and median household income. These data were sourced from the USDA Economic Research Service.
 
- # Design
+## Database Design
+
+We utilized SQLite as our database engine. We chose SQLite because of its local storage, allowing us to more easily manipualte the data without setting up a more formal engine.
 
 For conceptual purposes, our team developed an Entity Relationship Diagram to clearly demonstrate how our source data relate to one another. This diagram can be seen here:
 
@@ -80,12 +85,44 @@ The primary key which binds all the source data together is State Code, a two le
 
 The foreign key relationship is not show because of the incompleteness of some data sources. The database is still in development phase and this can be amended as the model progresses.
 
+## Machine Learing 
 
-# Technology Reference
+### Pre-processing
+The data, stored locally using SQLite, is loaded into a jupyter notebook after connecting the database. The dataframe is read-in using SQL given it is the base language of the data engine.
+
+Next, some data scrubbing takes place. This includes investigating using boxplots and removing outliers if deemed necessary (Average_Traffic_Volume) for instance, searching and removing null values or replacing with zeros.
+
+Next, target values and feature dataframes are established. In this project's case "level" is the target value. Each county is assigned a heart disease mortality level, caluclated using quartiles. Meaning the counties with the lowest levels of heart disease mortality are assigned a level of 1, and the highest quartile a level of four. Our model will attempt to predict which level a county belongs to using a testing dataset after being trained.
+
+### Splitting in training and testing sets
+
+The overall dataset was transformed into testing and training sets using train_test_split module from SciKitLearn. This was done for both the x variables (featues) and y-target variable (level). Additionally, each testing and training set was scaled for easier computing and uniformity utilizing StandardScaler. This module alters the data so that it has a mean of 0 and a standard deviation of 1. 
+
+
+### Models
+
+Our team tested a number of machien learnign methods in an attempt to find the most effective in predicitng the level of heart disease mortality per county. In evaluating the models, we used accuracy as a base metric to compare the models to eachother. All of our models were imported via SciKitLearn. In 
+
+
+## Dashboard
+
+Indepndent users may interact with the data set via Tableau public here: https://public.tableau.com/profile/matt.root#!/vizhome/Heart_Disease_Features/Dashboard1?publish=yes
+
+This dashboard includes a number of visualizations that highlight the main findings of the machine learning model and our team's analysis. They include:
+
+1. An interactive heat map where a user can select a feature that heavily impacts heart disease mortality and be shown where in the country the feature is prevelant.
+
+2. A bar chart highlighting the 5 most determinant features in the model.
+
+3. A heat chart ranking feature importance.
+
+ A thorough dashboard description can be found here: [Dashboard_Description.md](dashboard/Dashboard_Description.md)
+
+## Technology Reference
 
 [technology.md](technology.md)
 
-# Question to Investigate
+## Question to Investigate
 
     1. Which factors are most significant in Heart Disease mortality in the U.S>?
 
@@ -95,6 +132,10 @@ The foreign key relationship is not show because of the incompleteness of some d
 
         2a. Which counties fair better and why?
 
+
+## Google Slides
+
+Link to presentation: https://docs.google.com/presentation/d/1qPEiTcT5hdARe0zSVPUw2gLa-lvXnCOFxAzWB8XS0uM/edit?usp=sharing
 
 ### Team Communication: Agile Methodology 
 ---

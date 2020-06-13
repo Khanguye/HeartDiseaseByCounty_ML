@@ -27,3 +27,8 @@ https://public.tableau.com/profile/matt.root#!/vizhome/Heart_Disease_Features/Da
 # Additional Visualizations
 
 Additionally, our dashboard will include other visualizations to highlight some tangential findings.
+
+Below is a heat gradient map outling feature rankings relative to their importance in prediciting heart disease mortality.
+
+
+Lastly, we have a bar chart showing the top features and their relative importance to the model's predicition.
