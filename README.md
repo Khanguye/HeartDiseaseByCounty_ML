@@ -79,7 +79,7 @@ We utilized SQLite as our database engine. We chose SQLite because of its local 
 
 For conceptual purposes, our team developed an Entity Relationship Diagram to clearly demonstrate how our source data relate to one another. This diagram can be seen here:
 
-![ERD_Heart_Disease.png.png](model/diagram/ERD_Heart_Disease.png)
+![ERD_Heart_Disease.png](model/diagram/ERD_Heart_Disease.png)
 
 The primary key which binds all the source data together is State Code, a two letter abbreviation for each state joined with the respective counties. The individual tables are three raw data tables and one mapping table. The mapping table is used to tie a State name to its code (primary key). The raw data files have the features the model is investigating, and the heart disease rates by state.
 
@@ -103,6 +103,9 @@ The overall dataset was transformed into testing and training sets using train_t
 
 Our team tested a number of machien learnign methods in an attempt to find the most effective in predicitng the level of heart disease mortality per county. In evaluating the models, we used accuracy as a base metric to compare the models to eachother. All of our models were imported via SciKitLearn. 
 
+
+Below is a link to one of the decision tree's used in our random classifier:
+https://heart-disease-by-county.surge.sh/tree.html
 
 ## Dashboard
 
