@@ -132,4 +132,4 @@ dmypy.json
 .DS_Store
 
 #data/_bk
-data/_bk/
+**/_bk
