@@ -21,7 +21,15 @@ These metrics are determined by the model to be the most significant in predicti
 
 ![Food_Environ.png](Food_Environ.png)
 
+# Link to Dashboard
+https://public.tableau.com/profile/matt.root#!/vizhome/Heart_Disease_Features/Dashboard1?publish=yes
 
 # Additional Visualizations
 
 Additionally, our dashboard will include other visualizations to highlight some tangential findings.
+
+Below is a heat gradient map outling feature rankings relative to their importance in prediciting heart disease mortality.
+
+https://heart-disease-by-county.surge.sh/HeartDiseasePCA_FeatureRankings.png
+
+Lastly, we have a bar chart showing the top features and their relative importance to the model's predicition.
