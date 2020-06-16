@@ -67,7 +67,6 @@ Presence_of_Water_Violation
 %_Long_Commute	
 %_Adults_with_Diabetes	
 %_Limited_Access_to_Healthy_Foods
-Avg_Temperature
 %_Insufficient_Sleep
 Average_Traffic_Volume_per_Meter_of_Major_Roadways
 %_Homeowners
@@ -86,7 +85,7 @@ Unreported_education
 
  Additionally, we augmented to these data by including county population, population split by age/gender and median household income. 
  
- Median_Household_Income
+Median_Household_Income
 Household_Income_AIAN
 Household_Income_Asian
 Household_Income_Black
@@ -114,6 +113,7 @@ Female_Over_60
  Also we augmented data with Largest job sector, Temperature and Percipatation 
 
 Largest_sector
+Avg_Temperature
 Avg_Temp_C
 Avg_Precipitation_Inches
 
