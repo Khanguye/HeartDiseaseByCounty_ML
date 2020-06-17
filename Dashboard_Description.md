@@ -11,15 +11,15 @@ The user interaction comes in the form of pop-up markers. A user can click on a 
 
 These metrics are determined by the model to be the most significant in predicting heart disease mortality rates.
 
-![Mortality.png](Mortality.png)
+![Mortality.png](images/dashboard/Mortality.png)
 
-![Median_Household_Income.PNG](Median_Household_Income.PNG)
+![Median_Household_Income.PNG](images/dashboard/Median_Household_Income.PNG)
 
-![Percent_Smokers.PNG](Percent_Smokers.PNG)
+![Percent_Smokers.PNG](images/dashboard/Percent_Smokers.PNG)
 
-![Physical_Inactivity.PNG](Physical_Inactivity.PNG)
+![Physical_Inactivity.PNG](images/dashboard/Physical_Inactivity.PNG)
 
-![Food_Environ.png](Food_Environ.png)
+![Food_Environ.png](images/dashboard/Food_Environ.png)
 
 # Link to Dashboard
 https://public.tableau.com/profile/matt.root#!/vizhome/Heart_Disease_Features/Dashboard1?publish=yes

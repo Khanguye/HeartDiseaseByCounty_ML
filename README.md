@@ -173,7 +173,7 @@ This dashboard includes a number of visualizations that highlight the main findi
 
 3. A heat chart ranking feature importance.
 
- A thorough dashboard description can be found here: [Dashboard_Description.md](dashboard/Dashboard_Description.md)
+ A thorough dashboard description can be found here: [Dashboard_Description.md](Dashboard_Description.md)
 
 ## Technology Reference
 
