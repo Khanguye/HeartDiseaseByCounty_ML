@@ -11,15 +11,15 @@ The user interaction comes in the form of pop-up markers. A user can click on a 
 
 These metrics are determined by the model to be the most significant in predicting heart disease mortality rates.
 
-![Mortality.png](Mortality.png)
+![Mortality.png](images/dashboard/Mortality.png)
 
-![Median_Household_Income.PNG](Median_Household_Income.PNG)
+![Median_Household_Income.PNG](images/dashboard/Median_Household_Income.PNG)
 
-![Percent_Smokers.PNG](Percent_Smokers.PNG)
+![Percent_Smokers.PNG](images/dashboard/Percent_Smokers.PNG)
 
-![Physical_Inactivity.PNG](Physical_Inactivity.PNG)
+![Physical_Inactivity.PNG](images/dashboard/Physical_Inactivity.PNG)
 
-![Food_Environ.png](Food_Environ.png)
+![Food_Environ.png](images/dashboard/Food_Environ.png)
 
 # Link to Dashboard
 https://public.tableau.com/profile/matt.root#!/vizhome/Heart_Disease_Features/Dashboard1?publish=yes
@@ -30,6 +30,12 @@ Additionally, our dashboard will include other visualizations to highlight some 
 
 Below is a heat gradient map outling feature rankings relative to their importance in prediciting heart disease mortality.
 
+<<<<<<< HEAD:dashboard/Dashboard_Description.md
 https://heart-disease-by-county.surge.sh/HeartDiseasePCA_FeatureRankings.png
+=======
+![HeatMap with 5 Component PCA](images/HeartDiseasePCA_FeatureRankings_5.png)
+![HeatMap with 10 Component PCA](images/HeartDiseasePCA_FeatureRankings_10.png)
+![HeatMap with 10 Component PCA](images/HeartDiseasePCA_FeatureRankings_20.png)
+>>>>>>> 8f083d010271c14b9de2d54820dacddaa7875f47:Dashboard_Description.md
 
 Lastly, we have a bar chart showing the top features and their relative importance to the model's predicition.

@@ -35,7 +35,7 @@
       <connection class='federated'>
         <named-connections>
           <named-connection caption='Clipboard_20200606T133558' name='Clipboard_20200606T133558leaf'>
-            <connection class='textscan' directory='/Users/matthewroot/Desktop/Class/HeartDiseaseByCounty_ML/data' filename='Features_State_Counties.csv' password='' server='' />
+            <connection class='textscan' directory='../data' filename='Features_State_Counties.csv' password='' server='' />
           </named-connection>
         </named-connections>
         <relation connection='Clipboard_20200606T133558leaf' name='Features_State_Counties.csv' table='[Features_State_Counties#csv]' type='table'>
@@ -993,10 +993,10 @@
       <connection class='federated'>
         <named-connections>
           <named-connection caption='Heart_Disease_Mortality_County' name='excel-direct.0es67b90dxsd091cebf5i0ziei73'>
-            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='/Users/matthewroot/Desktop/Class/HeartDiseaseByCounty_ML/data/Heart_Disease_Mortality_County.csv' interpretationMode='0' password='' server='' validate='no' />
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='../data/Heart_Disease_Mortality_County.csv' interpretationMode='0' password='' server='' validate='no' />
           </named-connection>
           <named-connection caption='Heart_Disease_Mortality_County (2)' name='textscan.0yt7qtv0x5s49u1e6567o0orvqgi'>
-            <connection class='textscan' directory='/Users/matthewroot/Desktop/Class/HeartDiseaseByCounty_ML/data' filename='Heart_Disease_Mortality_County.csv' password='' server='' />
+            <connection class='textscan' directory='../data' filename='Heart_Disease_Mortality_County.csv' password='' server='' />
           </named-connection>
         </named-connections>
         <relation connection='textscan.0yt7qtv0x5s49u1e6567o0orvqgi' name='Heart_Disease_Mortality_County.csv' table='[Heart_Disease_Mortality_County#csv]' type='table'>
@@ -1099,7 +1099,7 @@
       <connection class='federated'>
         <named-connections>
           <named-connection caption='Features_County' name='textscan.0mkgpq81hs81v31c7k7gr1ns6nad'>
-            <connection class='textscan' directory='/Users/matthewroot/Desktop/Class/HeartDiseaseByCounty_ML/data' filename='Features_State_Counties.csv' password='' port='0' server='' />
+            <connection class='textscan' directory='../data' filename='Features_State_Counties.csv' password='' port='0' server='' />
           </named-connection>
         </named-connections>
         <relation connection='textscan.0mkgpq81hs81v31c7k7gr1ns6nad' name='Features_State_Counties.csv' table='[Features_State_Counties#csv]' type='table'>
