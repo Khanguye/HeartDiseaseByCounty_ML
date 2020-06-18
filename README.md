@@ -3,9 +3,19 @@
 # Project Outline
 
 ## Topic
-This project focuses on Heart Disease in the United States. Specifically, it attempts to predict the likeliehood of heart disease mortality by county. This project compares different Machine-Learning model to see the best fit for the usecase and the dataset in hand. Based on the Exploratory Data Ananlysis we developed a Machine-Learning model using a Random Forest Classisifer to make the prediction. Additionally, our model will rank the various features in the dataset by the impact on heart disease.
+This project focuses on Heart Disease in the United States. Specifically, it attempts to predict the likelihood of heart disease mortality by county. This project compares different Machine Learning models to see the best fit for the use case and the available datasets. 
 
-We chose this topic because of the wide availability of reliable, sourced data as well as some personal connections to heart disease. We hope that we may learn some insightful results regarding the disease prevelance and the factors which surround it.
+We chose this topic because of the wide availability of reliable, sourced data as well as some personal interests in heart disease. We hope that we may learn some insightful results regarding the disease prevelance and the factors which surround it.
+
+## Questions to Investigate
+
+    1. What factors are impacting the heart disease mortality in the US, and their significance? 
+
+        a) Are socio-economic, environmental, lifestyle, or health measures more impactful?
+        b) How is heart disease mortality correlated or caused by the identified factors? 
+
+    2.What is the correlation or causation between the identified factors and heart disease? 
+
 
 ## Source Data
  The majority of our data are from the 'County Health and Rankings Roadmap', a collaboration between the University of Wisconsin and the Robert Woods foundation. The raw data can be found here: https://www.countyhealthrankings.org/explore-health-rankings/rankings-data-documentation. Its original purpose was to rank each county in the United States by the health quality of its residents. For our purposes, the data outlines various health, life-style and environmental metrics by county in the United States. Some examples of these measures includes Adult Smoking Prevelance, Adult Obesity Prevelance, Education Rankings, Excessive Drinking, and others. 
@@ -38,7 +48,7 @@ Comprehensive Housing Affordability Strategy (CHAS) data
 
 In trying to model the georgraphic presence of heart disease, we are analyzing several features. These include:
 
-Full Feature List:
+*Full Feature List*:
 %_Fair_or_Poor_Health
 Avg_No._Physically_Unhealthy_Days	
 Avg_No._Mentally_Unhealthy_Days	
@@ -110,7 +120,7 @@ Female_Over_60
  
  These data were sourced from the USDA Economic Research Service.
 
- Also we augmented data with Largest job sector, Temperature and Percipatation 
+ Also we augmented data with Largest job sector in each county, Temperature and Percipatation 
 
 Largest_sector
 Avg_Temperature
@@ -125,18 +135,24 @@ For conceptual purposes, our team developed an Entity Relationship Diagram to cl
 
 ![ERD_Heart_Disease.png](model/diagram/ERD_Heart_Disease.png)
 
-The primary key which binds all the source data together is State Code, a two letter abbreviation for each state joined with the respective counties. Parent Table State holds Name, Code and we have Primary table Heart_Disease_Mortality_State_Counties (which holds mortality rate per 100,000), Features_State_Counties (which holds most of the features), Population_State_Counties (table which holds population). The raw data files have the features the model is investigating, and the heart disease rates by state.
+The two primary keys which bind all the source data together are  State Code, a two letter abbreviation for each state, and County Name. 
 
-The foreign key relationship is not shown in the ERD to show how the data is related but in SQLite we didn't add the foreign key to avoid data voilation.
+Parent Table "State" holds Name, Code. 
+
+Second Table "Heart_Disease_Mortality_State_Counties" holds mortality rate per 100,000, which was then classified into four levels: 1, 2, 3, 4.
+
+Third table "Features_State_Counties" holds most of the features.
+
+Fourth table "Population_State_Counties" holds population data. 
 
 ## Machine Learing 
 
 ### Pre-processing
-The data, stored locally using SQLite, is loaded into a jupyter notebook after connecting the database. The dataframe is read-in using SQL given it is the base language of the data engine.
+The data stored in SQLite is loaded into a jupyter notebook after connecting the database. The dataframe is read-in using SQL given it is the base language of the data engine.
 
 Next, some data scrubbing takes place. This includes investigating using boxplots and removing outliers if deemed necessary (Average_Traffic_Volume) for instance, searching and removing null values or replacing with zeros.
 
-Next, target values and feature dataframes are established. In this project's case "level" is the target value. Each county is assigned a heart disease mortality level, caluclated using quartiles. Meaning the counties with the lowest levels of heart disease mortality are assigned a level of 1, and the highest quartile a level of four. Our model will attempt to predict which level a county belongs to using a testing dataset after being trained.
+Next, target values and feature dataframes are established. In this project, mortality "level" is the target value. Each county is assigned a heart disease mortality level, caluclated using quartiles. Meaning the counties with the lowest levels of heart disease mortality are assigned a level of 1, and the highest quartile a level of four. Our model will attempt to predict which level a county belongs to using a testing dataset after being trained.
 
 ### Splitting in training and testing sets
 
@@ -147,19 +163,23 @@ The overall dataset was transformed into testing and training sets using train_t
 
 Our team tested a number of machine learning methods in an attempt to find the most effective in predicitng the level of heart disease mortality per county. In evaluating the models, we used accuracy and recall as a base metric to compare the models to eachother. All of our models were analyzed via SciKitLearn. 
 
-Below is a link to the decision tree's used by our random classifier:
+Based on the Exploratory Data Ananlysis we decided on a Machine Learning model using a Random Forest Classisifer to make the prediction. Additionally, our model will rank the various features in the dataset to relate their impact on heart disease.
+
+Below is a link to the decision tree's used by our Random Forest Classifier:
 https://heart-disease-by-county.surge.sh/tree.html
 
-We also tried to do dimension reduction using PCA, by plotting cummulative explained variance ration and number of components we arrived at optimum number of components 20 which covers 80% of variance. Here is the link to the PCA with different feature rankings/contribution 
+We also tried to do dimension reduction using PCA, by plotting cummulative explained variance ration and number of components we arrived at optimum number of components 20 which covers 80% of variance. 
+
+This figure shows the PCA with different feature rankings/contribution 
 ![PCA 20 Component Heat Map](images/HeartDiseasePCA_FeatureRankings_20.png). 
 
-Below link shows the density plot and distribution for top 6 features from Component 1
+Images below show the density plot and distribution for top 6 features from Component 1
 ![PCA Component 1 Top 6 feature Density plot](images/PCA_Component1_Top_Feature_Density_Plot.png)
 ![PCA Component 1 top 6 feature distribution](images/PCA_Component1_Top_Feature_Scatter_Plot.png)
 ![PCA Component 2 Top 6 feature Density plot](images/PCA_Component2_Top_Feature_Density_Plot.png)
 ![PCA Component 2 top 6 feature distribution](images/PCA_Component2_Top_Feature_Scatter_Plot.png)
 
-Add on to other Machine Learning models we developed Random Forest Classifier Model based on PCA dimension reduction as feature which gave a accuracy of close 49%.
+The PCA dimension reduction was subsequently fed into the Machine Learning Random Forest Classifier Model, which returned an accuracy of close to 49%.
 
 ## Dashboard
 
@@ -178,17 +198,6 @@ This dashboard includes a number of visualizations that highlight the main findi
 ## Technology Reference
 
 [technology.md](technology.md)
-
-## Question to Investigate
-
-    1. Which factors are most significant in Heart Disease mortality in the U.S>?
-
-        1a.Are environmental, lifestyle or health measures more impactful?
-
-    2.Which areas of the country suffer greatest with respect to heart disease?
-
-        2a. Which counties fair better and why?
-
 
 ## Google Slides
 
