@@ -14,8 +14,7 @@ We chose this topic because of the wide availability of reliable, sourced data a
         a) Are socio-economic, environmental, lifestyle, or health measures more impactful?
         b) How is heart disease mortality correlated or caused by the identified factors? 
 
-    2.What is the correlation or causation between the identified factors and heart disease? 
-
+    2.What is the correlation or causation between the identifiedfactors and heart disease? 
 
 ## Source Data
  The majority of our data are from the 'County Health and Rankings Roadmap', a collaboration between the University of Wisconsin and the Robert Woods foundation. The raw data can be found here: https://www.countyhealthrankings.org/explore-health-rankings/rankings-data-documentation. Its original purpose was to rank each county in the United States by the health quality of its residents. For our purposes, the data outlines various health, life-style and environmental metrics by county in the United States. Some examples of these measures includes Adult Smoking Prevelance, Adult Obesity Prevelance, Education Rankings, Excessive Drinking, and others. 
@@ -23,109 +22,111 @@ We chose this topic because of the wide availability of reliable, sourced data a
 According to the data compilers, it was sourced from various sources, primarily government agencies. 
 
 They are : 
-National Center for Health Statistics - Mortality Files
-Behavioral Risk Factor Surveillance System
-National Center for Health Statistics - Natality files
-United States Diabetes Surveillance System
-USDA Food Environment Atlas, Map the Meal Gap from Feeding America
-Business Analyst, Delorme map data, ESRI, & US Census Tigerline Files
-Fatality Analysis Reporting System
-National Center for HIV/AIDS, Viral Hepatitis, STD, and TB Prevention
-Small Area Health Insurance Estimates
-Area Health Resource File/American Medical Association
-Area Health Resource File/National Provider Identification file
-CMS, National Provider Identification
-Mapping Medicare Disparities Tool
-State-specific sources & EDFacts
-American Community Survey, 5-year estimates
-Bureau of Labor Statistics
-Small Area Income and Poverty Estimates
-County Business Patterns
-Uniform Crime Reporting - FBI
-Environmental Public Health Tracking Network
-Safe Drinking Water Information System
-Comprehensive Housing Affordability Strategy (CHAS) data
+- National Center for Health Statistics - Mortality Files
+- Behavioral Risk Factor Surveillance System
+- National Center for Health Statistics - Natality files
+- United States Diabetes Surveillance System
+- USDA Food Environment Atlas, Map the Meal Gap from Feeding America
+- Business Analyst, Delorme map data, ESRI, & US Census Tigerline Files
+- Fatality Analysis Reporting System
+- National Center for HIV/AIDS, Viral Hepatitis, STD, and TB Prevention
+- Small Area Health Insurance Estimates
+- Area Health Resource File/American Medical Association
+- Area Health Resource File/National Provider Identification file
+- CMS, National Provider Identification
+- Mapping Medicare Disparities Tool
+- State-specific sources & EDFacts
+- American Community Survey, 5-year estimates
+- Bureau of Labor Statistics
+- Small Area Income and Poverty Estimates
+- County Business Patterns
+- Uniform Crime Reporting - FBI
+- Environmental Public Health Tracking Network
+- Safe Drinking Water Information System
+- Comprehensive Housing Affordability Strategy (CHAS) data
 
 In trying to model the georgraphic presence of heart disease, we are analyzing several features. These include:
 
 *Full Feature List*:
-%_Fair_or_Poor_Health
-Avg_No._Physically_Unhealthy_Days	
-Avg_No._Mentally_Unhealthy_Days	
-%_Smokers
-%_Adults_Obesity	
-Food_Environment_Index	
-%_Physically_Inactive	
-%_Access_to_Exercise_Opportunities	
-%_Excessive_Drinking	
-%_Uninsured	
-Primary_Care_Physicians_Rate	
-Dentist_Rate	
-Mental_Health_Provider_Rate	
-Preventable_Hospitalization_Rate	
-%_Vaccinated	
-High_School_Graduation_Rate	
-%_Some_College	
-%_Unemployed	
-%_Single_Parent_Households	
-Social_Association_Rate	
-Violent_Crime_Rate	
-Polution_Average_Daily_PM2.5	
-Presence_of_Water_Violation	
-%_Severe_Housing_Problems	
-%_Drive_Alone_to_Work	
-%_Long_Commute	
-%_Adults_with_Diabetes	
-%_Limited_Access_to_Healthy_Foods
-%_Insufficient_Sleep
-Average_Traffic_Volume_per_Meter_of_Major_Roadways
-%_Homeowners
-%_Severe_Housing_Cost_Burden
-%_Children_in_Poverty
-Teen_Birth_Rate
-Uninsured
-Insured
-Unreported_Insurance
-Poverty
-Less_than_high_school
-High_school_only
-College_or_associates
-Bachelor_degree_or_higher
-Unreported_education
+
+- %_Fair_or_Poor_Health
+- Avg_No._Physically_Unhealthy_Days	
+- Avg_No._Mentally_Unhealthy_Days	
+- %_Smokers
+- %_Adults_Obesity	
+- Food_Environment_Index	
+- %_Physically_Inactive	
+- %_Access_to_Exercise_Opportunities	 
+- %_Excessive_Drinking	
+- %_Uninsured	
+- Primary_Care_Physicians_Rate	
+- Dentist_Rate	
+- Mental_Health_Provider_Rate	
+- Preventable_Hospitalization_Rate	
+- %_Vaccinated	
+- High_School_Graduation_Rate	
+- %_Some_College	
+- %_Unemployed	
+- %_Single_Parent_Households	
+- Social_Association_Rate	
+- Violent_Crime_Rate	
+- Polution_Average_Daily_PM2.5	
+- Presence_of_Water_Violation	
+- %_Severe_Housing_Problems	
+- %_Drive_Alone_to_Work	
+- %_Long_Commute	
+- %_Adults_with_Diabetes	
+- %_Limited_Access_to_Healthy_Foods
+- %_Insufficient_Sleep
+- Average_Traffic_Volume_per_Meter_of_Major_Roadways
+- %_Homeowners
+- %_Severe_Housing_Cost_Burden
+- %_Children_in_Poverty
+- Teen_Birth_Rate
+- Uninsured
+- Insured
+- Unreported_Insurance
+- Poverty
+- Less_than_high_school
+- High_school_only
+- College_or_associates
+- Bachelor_degree_or_higher
+- Unreported_education
+
 
  Additionally, we augmented to these data by including county population, population split by age/gender and median household income. 
  
-Median_Household_Income
-Household_Income_AIAN
-Household_Income_Asian
-Household_Income_Black
-Household_Income_Hispanic
-Household_Income_White
-Population
-Population_Black
-Population_AIAN
-Population_Asian
-Population_NHPI
-Population_Hispanic
-Population_NHW
-Pop_Under_30
-Pop_Between_30-59
-Pop_Over_60
-Male_Under_30
-Male_30-59
-Male_Over_60
-Female_Under_30
-Female_30-59
-Female_Over_60
+- Median_Household_Income
+- Household_Income_AIAN
+- Household_Income_Asian
+- Household_Income_Black
+- Household_Income_Hispanic
+- Household_Income_White 
+- Population
+- Population_Black
+- Population_AIAN
+- Population_Asian
+- Population_NHPI
+- Population_Hispanic
+- Population_NHW
+- Pop_Under_30
+- Pop_Between_30-59
+- Pop_Over_60
+- Male_Under_30
+- Male_30-59
+- Male_Over_60
+- Female_Under_30
+- Female_30-59
+- Female_Over_60
  
  These data were sourced from the USDA Economic Research Service.
 
  Also we augmented data with Largest job sector in each county, Temperature and Percipatation 
 
-Largest_sector
-Avg_Temperature
-Avg_Temp_C
-Avg_Precipitation_Inches
+- Largest_sector
+- Avg_Temperature
+- Avg_Temp_C
+- Avg_Precipitation_Inches
 
 ## Database Design
 
@@ -137,13 +138,10 @@ For conceptual purposes, our team developed an Entity Relationship Diagram to cl
 
 The two primary keys which bind all the source data together are  State Code, a two letter abbreviation for each state, and County Name. 
 
-Parent Table "State" holds Name, Code. 
-
-Second Table "Heart_Disease_Mortality_State_Counties" holds mortality rate per 100,000, which was then classified into four levels: 1, 2, 3, 4.
-
-Third table "Features_State_Counties" holds most of the features.
-
-Fourth table "Population_State_Counties" holds population data. 
+- Parent Table "State" holds Name, Code. 
+- Second Table "Heart_Disease_Mortality_State_Counties" holds mortality rate per 100,000, which was then classified into four levels: 1, 2, 3, 4.
+- Third table "Features_State_Counties" holds most of the features.
+- Fourth table "Population_State_Counties" holds population data. 
 
 ## Machine Learing 
 
