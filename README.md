@@ -129,6 +129,7 @@ In trying to model the georgraphic presence of heart disease, we are analyzing s
 - Avg_Precipitation_Inches
 
 ## Database Design
+---
 
 We utilized SQLite as our database engine. We chose SQLite because of its local storage, allowing us to more easily manipualte the data without setting up a more formal engine.
 
@@ -144,8 +145,11 @@ The two primary keys which bind all the source data together are  State Code, a 
 - Fourth table "Population_State_Counties" holds population data. 
 
 ## Machine Learing 
+---
 
 ### Pre-processing
+---
+
 The data stored in SQLite is loaded into a jupyter notebook after connecting the database. The dataframe is read-in using SQL given it is the base language of the data engine.
 
 Next, some data scrubbing takes place. This includes investigating using boxplots and removing outliers if deemed necessary (Average_Traffic_Volume) for instance, searching and removing null values or replacing with zeros.
@@ -153,35 +157,61 @@ Next, some data scrubbing takes place. This includes investigating using boxplot
 Next, target values and feature dataframes are established. In this project, mortality "level" is the target value. Each county is assigned a heart disease mortality level, caluclated using quartiles. Meaning the counties with the lowest levels of heart disease mortality are assigned a level of 1, and the highest quartile a level of four. Our model will attempt to predict which level a county belongs to using a testing dataset after being trained.
 
 ### Splitting in training and testing sets
+---
 
 The overall dataset was transformed into testing and training sets using train_test_split module from SciKitLearn. This was done for both the x variables (featues) and y-target variable (level). Additionally, each testing and training set was scaled for easier computing and uniformity utilizing StandardScaler. This module alters the data so that it has a mean of 0 and a standard deviation of 1. 
 
 
 ### Models
+---
 
 Our team tested a number of machine learning methods in an attempt to find the most effective in predicitng the level of heart disease mortality per county. In evaluating the models, we used accuracy and recall as a base metric to compare the models to eachother. All of our models were analyzed via SciKitLearn. 
 
 Based on the Exploratory Data Ananlysis we decided on a Machine Learning model using a Random Forest Classisifer to make the prediction. Additionally, our model will rank the various features in the dataset to relate their impact on heart disease.
 
 Below is a link to the decision tree's used by our Random Forest Classifier:
-https://heart-disease-by-county.surge.sh/tree.html
+
+[https://heart-disease-by-county.surge.sh/tree.html](https://heart-disease-by-county.surge.sh/tree.html)
 
 We also tried to do dimension reduction using PCA, by plotting cummulative explained variance ration and number of components we arrived at optimum number of components 20 which covers 80% of variance. 
 
 This figure shows the PCA with different feature rankings/contribution 
+
 ![PCA 20 Component Heat Map](images/HeartDiseasePCA_FeatureRankings_20.png). 
 
 Images below show the density plot and distribution for top 6 features from Component 1
+
 ![PCA Component 1 Top 6 feature Density plot](images/PCA_Component1_Top_Feature_Density_Plot.png)
+
 ![PCA Component 1 top 6 feature distribution](images/PCA_Component1_Top_Feature_Scatter_Plot.png)
+
 ![PCA Component 2 Top 6 feature Density plot](images/PCA_Component2_Top_Feature_Density_Plot.png)
+
 ![PCA Component 2 top 6 feature distribution](images/PCA_Component2_Top_Feature_Scatter_Plot.png)
 
 The PCA dimension reduction was subsequently fed into the Machine Learning Random Forest Classifier Model, which returned an accuracy of close to 49%.
 
-## Dashboard
+## Notebooks
+---
 
-Independent users may interact with the data set via Tableau public here: https://public.tableau.com/profile/matt.root#!/vizhome/Heart_Disease_Features/Dashboard1?publish=yes
+**Week 1**: Data Extraction, Data Storage
+
+[HeartDisease_ML_Week1.ipynb](HeartDisease_ML_Week1.ipynb)
+
+**Week 2**: Exploratory, Data Validation, Data Warngling, Data Analysis with MLs
+
+[HeartDisease_ML_Week2.ipynb](HeartDisease_ML_Week2.ipynb)
+
+**Week 3**: Final ML, Explore Data for Visualization (Dashboard)
+
+[HeartDisease_ML_Week3.ipynb](HeartDisease_ML_Week3.ipynb)
+
+## Dashboard
+---
+
+Independent users may interact with the data set via Tableau public here:
+
+[https://public.tableau.com/profile/matt.root#!/vizhome/Heart_Disease_Features/Dashboard1?publish=yes](https://public.tableau.com/profile/matt.root#!/vizhome/Heart_Disease_Features/Dashboard1?publish=yes)
 
 This dashboard includes a number of visualizations that highlight the main findings of the machine learning model and our team's analysis. They include:
 
@@ -191,15 +221,23 @@ This dashboard includes a number of visualizations that highlight the main findi
 
 3. A heat chart ranking feature importance.
 
- A thorough dashboard description can be found here: [Dashboard_Description.md](Dashboard_Description.md)
+A thorough dashboard description can be found here: [Dashboard_Description.md](Dashboard_Description.md)
+
+## Google Slides
+---
+
+- Link to presentation: https://docs.google.com/presentation/d/1qPEiTcT5hdARe0zSVPUw2gLa-lvXnCOFxAzWB8XS0uM/edit?usp=sharing
 
 ## Technology Reference
+---
 
 [technology.md](technology.md)
 
-## Google Slides
-
-Link to presentation: https://docs.google.com/presentation/d/1qPEiTcT5hdARe0zSVPUw2gLa-lvXnCOFxAzWB8XS0uM/edit?usp=sharing
+1. Jupyter Notebook (IDE) (dependency list in the file [requirements.txt](requirements.txt) 
+2. Python 3 (Data Analysis and ML)
+3. Sqlite (Data Storage)
+4. Googleslide (Presentation)
+5. Tableau (Visualization)
 
 ### Team Communication: Agile Methodology 
 ---
