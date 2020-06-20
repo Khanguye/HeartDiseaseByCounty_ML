@@ -16,7 +16,6 @@ We chose this topic because of the wide availability of reliable, sourced data a
 
     2.What is the correlation or causation between the identifiedfactors and heart disease? 
 
-
 ## Source Data
  The majority of our data are from the 'County Health and Rankings Roadmap', a collaboration between the University of Wisconsin and the Robert Woods foundation. The raw data can be found here: https://www.countyhealthrankings.org/explore-health-rankings/rankings-data-documentation. Its original purpose was to rank each county in the United States by the health quality of its residents. For our purposes, the data outlines various health, life-style and environmental metrics by county in the United States. Some examples of these measures includes Adult Smoking Prevelance, Adult Obesity Prevelance, Education Rankings, Excessive Drinking, and others. 
 
@@ -49,6 +48,7 @@ They are :
 In trying to model the georgraphic presence of heart disease, we are analyzing several features. These include:
 
 *Full Feature List*:
+
 - %_Fair_or_Poor_Health
 - Avg_No._Physically_Unhealthy_Days	
 - Avg_No._Mentally_Unhealthy_Days	
@@ -92,6 +92,7 @@ In trying to model the georgraphic presence of heart disease, we are analyzing s
 - College_or_associates
 - Bachelor_degree_or_higher
 - Unreported_education
+
 
  Additionally, we augmented to these data by including county population, population split by age/gender and median household income. 
  
