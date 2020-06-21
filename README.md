@@ -256,9 +256,9 @@ Links for the references we collected to justify our findings and conclusion
 
 ## Conclusion:
 
-We can conclude that all the different vectors of the features like Social Economic, Environment, Lifestyle, Health plays a role in the Heart Disease mortality. To be precise from the top 5 feature Median Household Income(Social Economic), Smoking (Lifestyle), Average Temperature (Environment), Physical Unhealthy/Poor Health (Health) we can understand the same. 
+We can conclude that all the different vectors of the features like Social Economic, Environment, Lifestyle, Health plays a role in the Heart Disease mortality. The top 5 feature Median Household Income(Social Economic), Smoking (Lifestyle), Average Temperature (Environment), Physical Unhealthy/Poor Health (Health) confirms that. 
    
-To answer correlation and causation: Using the reasearch paper and other findings we can say Lifestyle, Environment Health could be causation while Social Economic could be correlated factor. Though the model doesn't concretely justify the correlation and causation  of the factors/features which affect the Heart Disease Mortality rate .
+Correlation and Causation: Using the research paper and other findings we can say Lifestyle, Environment and Health could be causation while Social Economic could be correlated factor. Though the model doesn't concretely justify the correlation and causation  of the factors/features which affect the Heart Disease Mortality rate .
 
 ## Google Slides
 ---
