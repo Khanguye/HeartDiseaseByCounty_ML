@@ -9,6 +9,8 @@ A color schema will be used to indicate the severity of heart disease mortality 
 
 The user interaction comes in the form of pop-up markers. A user can click on a particular county and be shown a window with that county's heart disease mortality rate and top-5 impact metrics.
 
+Link to the storyboard: [https://public.tableau.com/profile/matt.root#!/vizhome/Heart_Disease_Mortality/HeartDiseaseMortality](https://public.tableau.com/profile/matt.root#!/vizhome/Heart_Disease_Mortality/HeartDiseaseMortality)
+
 These metrics are determined by the model to be the most significant in predicting heart disease mortality rates.
 
 ![Mortality.png](images/dashboard/Mortality.png)
@@ -30,12 +32,8 @@ Additionally, our dashboard will include other visualizations to highlight some 
 
 Below is a heat gradient map outling feature rankings relative to their importance in prediciting heart disease mortality.
 
-<<<<<<< HEAD:dashboard/Dashboard_Description.md
-https://heart-disease-by-county.surge.sh/HeartDiseasePCA_FeatureRankings.png
-=======
 ![HeatMap with 5 Component PCA](images/HeartDiseasePCA_FeatureRankings_5.png)
 ![HeatMap with 10 Component PCA](images/HeartDiseasePCA_FeatureRankings_10.png)
 ![HeatMap with 10 Component PCA](images/HeartDiseasePCA_FeatureRankings_20.png)
->>>>>>> 8f083d010271c14b9de2d54820dacddaa7875f47:Dashboard_Description.md
 
 Lastly, we have a bar chart showing the top features and their relative importance to the model's predicition.
