@@ -208,8 +208,6 @@ The PCA dimension reduction was subsequently fed into the Machine Learning Rando
 
 [HeartDisease_ML_Week3.ipynb](HeartDisease_ML_Week3.ipynb)
 
-<<<<<<< HEAD
-=======
 ## Limitation - Data
 ---
 Limitation of the dataset collected and used for the machine learning model
@@ -220,7 +218,6 @@ Limitation of the dataset collected and used for the machine learning model
 
 
 
->>>>>>> master
 ## Dashboard
 ---
 
@@ -237,21 +234,10 @@ This dashboard includes a number of visualizations that highlight the main findi
 3. A heat chart ranking feature importance.
 
 A thorough dashboard description can be found here: [Dashboard_Description.md](Dashboard_Description.md)
-<<<<<<< HEAD
-
-## Google Slides
----
-
-- Link to presentation: https://docs.google.com/presentation/d/1qPEiTcT5hdARe0zSVPUw2gLa-lvXnCOFxAzWB8XS0uM/edit?usp=sharing
-
-## Technology Reference
----
-=======
 
 ## Findings
 ---
 The top factors/features identified by our seems to be aligned with some of the Reaserch and papers published in the medical field and other research field. Please find some sample findings we have collected
->>>>>>> master
 
 - Features identified by our model relating to heart disease are in line with other studies 
 - A Canadian study showed that income is strongly and independently associated with heart disease. It showed that low income residents are 52% more likely to have heart disease.  The study also showed that lower income residents also have higher prevalence in conventional heart disease factors such as smoking habit, high blood pressure, and physical inactivity. 
@@ -274,8 +260,6 @@ We can conclude that all the different vectors of the features like Social Econo
    
 Correlation and Causation: Using the research paper and other findings we can say Lifestyle, Environment and Health could be causation while Social Economic could be correlated factor. Though the model doesn't concretely justify the correlation and causation  of the factors/features which affect the Heart Disease Mortality rate .
 
-<<<<<<< HEAD
-=======
 ## Google Slides
 ---
 
@@ -286,7 +270,6 @@ Correlation and Causation: Using the research paper and other findings we can sa
 
 [technology.md](technology.md)
 
->>>>>>> master
 1. Jupyter Notebook (IDE) (dependency list in the file [requirements.txt](requirements.txt) 
 2. Python 3 (Data Analysis and ML)
 3. Sqlite (Data Storage)
