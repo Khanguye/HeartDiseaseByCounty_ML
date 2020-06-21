@@ -146,6 +146,23 @@ The two primary keys which bind all the source data together are  State Code, a 
 - Third table "Features_State_Counties" holds most of the features.
 - Fourth table "Population_State_Counties" holds population data. 
 
+## Technology Reference
+---
+
+[technology.md](technology.md)
+
+1. Excel (Data Extraction & Data Validation)
+2. Jupyter Notebook (IDE) (dependency list in the file [requirements.txt](requirements.txt) 
+3. Python 3 (Data Analysis and ML)
+4. Sqlite (Data Storage)
+5. Googleslide (Presentation)
+6. Tableau (Visualization)
+
+## Workflow
+---
+
+![WorkFlow.png](images/WorkFlow.png)
+
 ## Machine Learing 
 ---
 
@@ -218,14 +235,14 @@ Limitation of the dataset collected and used for the machine learning model
 
 
 
-## Dashboard
+## Storyboard
 ---
 
 Independent users may interact with the data set via Tableau public here:
 
-[https://public.tableau.com/profile/matt.root#!/vizhome/Heart_Disease_Features/Dashboard1?publish=yes](https://public.tableau.com/profile/matt.root#!/vizhome/Heart_Disease_Features/Dashboard1?publish=yes)
+Link to the storyboard: [https://public.tableau.com/profile/matt.root#!/vizhome/Heart_Disease_Mortality/HeartDiseaseMortality](https://public.tableau.com/profile/matt.root#!/vizhome/Heart_Disease_Mortality/HeartDiseaseMortality)
 
-This dashboard includes a number of visualizations that highlight the main findings of the machine learning model and our team's analysis. They include:
+This Storyboard includes a number of visualizations that highlight the main findings of the machine learning model and our team's analysis. They include:
 
 1. An interactive heat map where a user can select a feature that heavily impacts heart disease mortality and be shown where in the country the feature is prevelant.
 
@@ -265,83 +282,3 @@ Correlation and Causation: Using the research paper and other findings we can sa
 
 - Link to presentation: https://docs.google.com/presentation/d/1qPEiTcT5hdARe0zSVPUw2gLa-lvXnCOFxAzWB8XS0uM/edit?usp=sharing
 
-## Technology Reference
----
-
-[technology.md](technology.md)
-
-1. Excel (Data Extraction & Data Validation)
-2. Jupyter Notebook (IDE) (dependency list in the file [requirements.txt](requirements.txt) 
-3. Python 3 (Data Analysis and ML)
-4. Sqlite (Data Storage)
-5. Googleslide (Presentation)
-6. Tableau (Visualization)
-
-## Workflow
----
-
-![WorkFlow.png](images/WorkFlow.png)
-
-### Team Communication: Agile Methodology 
----
-
-![Agile Diagram](https://www.openxcell.com/wp-content/uploads/2020/02/Agile_Diagram.png)
-[https://www.openxcell.com/blog/agile-methodology-important-start/](https://www.openxcell.com/blog/agile-methodology-important-start/)
-
-- Private Slack Channel
-- https://app.zenhub.com (Open New Feature and Tracking Issue)
-- Github for repository
-
-### Git Hub Team Collaboration
---- 
-
-**Git Setup:**
-
-- The master branch is protected from pushing directly
-- Each team member needs to create a feature branch from the master branch. The feature branch name should be **yourname** or **yourname_feature**
-- When a team member finishes the feature, then open the new pull request (create a merge to master request). The pull request needs to approve by at other team members
-- After the pull request is successful, you can keep your feature branch or delete, and create a next new feature branch
-
-**Git Commands:**
-
-Refer: [Git Common Commands](GitCommands.md)
-
-- Create a new feature branch
-
-```Python
-# Clone
-$ git clone https://github.com/Khanguye/HeartDiseaseByCounty_ML.git
-
-# Switch Directory
-$ cd HeartDiseaseByCounty_ML
-
-# Create new branch
-$ git checkout -b yourname_feature
-
-# Push up to remote GitHub
-$ git push -u origin yourname_feature
-```
-
-- Check in the feature branch to remote branch
-
-```Python
-# Add files in Staging
-$ git add .
-# Or one file in Staging
-$ git add fileName
-# Commit in Staging
-$ git commit -m "Clear Label Message"
-# Push back to remote
-$ git push 
-```
-
-- Merge from the master branch
-
-```Python
-# Ensure you are on the corrected branch
-$ git checkout feature
-# Merge from master
-$ git merge master
-# Or
-$ git merge feature master
-```
