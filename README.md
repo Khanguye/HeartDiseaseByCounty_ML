@@ -277,6 +277,11 @@ Correlation and Causation: Using the research paper and other findings we can sa
 5. Googleslide (Presentation)
 6. Tableau (Visualization)
 
+## Workflow
+---
+
+![WorkFlow.png](images/WorkFlow.png)
+
 ### Team Communication: Agile Methodology 
 ---
 
