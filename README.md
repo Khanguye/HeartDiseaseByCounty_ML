@@ -5,16 +5,18 @@
 ## Topic
 This project focuses on Heart Disease in the United States. Specifically, it attempts to predict the likelihood of heart disease mortality by county. This project compares different Machine Learning models to see the best fit for the use case and the available datasets. 
 
-We chose this topic because of the wide availability of reliable, sourced data as well as some personal interests in heart disease. We hope that we may learn some insightful results regarding the disease prevelance and the factors which surround it.
+We chose this topic because of the following reasons:
+- Heart disease remains leading cause of death in US (1 in 3 deaths) and it’s expensive to take care
+- Personal interests in heart disease to know how it can impact us and the mitigation
+- Wide availability of reliable, sourced data . 
+
+We hope that we may learn some insightful results regarding the disease prevelance and the factors which surround it.
 
 ## Questions to Investigate
+What factors impacts the heart disease mortality in US, and their significance? 
+- Are social economic, environmental, lifestyle, or health measures more impactful?
+- Is the identified factor correlation or causation of heart disease mortality ? 
 
-    1. What factors are impacting the heart disease mortality in the US, and their significance? 
-
-        a) Are socio-economic, environmental, lifestyle, or health measures more impactful?
-        b) How is heart disease mortality correlated or caused by the identified factors? 
-
-    2.What is the correlation or causation between the identifiedfactors and heart disease? 
 
 ## Source Data
  The majority of our data are from the 'County Health and Rankings Roadmap', a collaboration between the University of Wisconsin and the Robert Woods foundation. The raw data can be found here: https://www.countyhealthrankings.org/explore-health-rankings/rankings-data-documentation. Its original purpose was to rank each county in the United States by the health quality of its residents. For our purposes, the data outlines various health, life-style and environmental metrics by county in the United States. Some examples of these measures includes Adult Smoking Prevelance, Adult Obesity Prevelance, Education Rankings, Excessive Drinking, and others. 
@@ -206,6 +208,19 @@ The PCA dimension reduction was subsequently fed into the Machine Learning Rando
 
 [HeartDisease_ML_Week3.ipynb](HeartDisease_ML_Week3.ipynb)
 
+<<<<<<< HEAD
+=======
+## Limitation - Data
+---
+Limitation of the dataset collected and used for the machine learning model
+
+1. Data is limited by publicly available data based on survey questions and social features
+
+2. No available data on unique county characteristics such as local food consumption habits, medical records, or family characteristics
+
+
+
+>>>>>>> master
 ## Dashboard
 ---
 
@@ -222,7 +237,45 @@ This dashboard includes a number of visualizations that highlight the main findi
 3. A heat chart ranking feature importance.
 
 A thorough dashboard description can be found here: [Dashboard_Description.md](Dashboard_Description.md)
+<<<<<<< HEAD
 
+## Google Slides
+---
+
+- Link to presentation: https://docs.google.com/presentation/d/1qPEiTcT5hdARe0zSVPUw2gLa-lvXnCOFxAzWB8XS0uM/edit?usp=sharing
+
+## Technology Reference
+---
+=======
+
+## Findings
+---
+The top factors/features identified by our seems to be aligned with some of the Reaserch and papers published in the medical field and other research field. Please find some sample findings we have collected
+>>>>>>> master
+
+- Features identified by our model relating to heart disease are in line with other studies 
+- A Canadian study showed that income is strongly and independently associated with heart disease. It showed that low income residents are 52% more likely to have heart disease.  The study also showed that lower income residents also have higher prevalence in conventional heart disease factors such as smoking habit, high blood pressure, and physical inactivity. 
+- CDC study showed that smoking has a causation effect on heart disease. One of every four deaths from heart disease is caused by smoking. Smoking causes a number of physiological damage such as raising triglycerides, lowering good cholesterol, causing blood to be more prone to clotting, and so on, all of which lead to higher risks in heart disease.
+- Our model result showed self-reported “% of unhealthy days”, “% of mentally unhealthy days”, and “poor health” as leading features in the prediction model.  This is in line with another study published by CDC which established “patients’ perception of their general physical and mental health status” as an important measure of cardiovascular disease.  The prevalence of self-reported fair/poor health also decreased with higher education and income. 
+- Another key feature shown in our model is average temperature.  CDC reported that heat waves have long been a threat to public health.  In terms of heart disease, heat waves have a causation effect causing many deaths in cardiovascular disease. 
+
+### References
+---
+Links for the references we collected to justify our findings and conclusion
+
+- Lemstra, M., Rogers, M., & Moraros, J. (2015). Income and heart disease: Neglected risk factor. Canadian family physician Medecin de famille canadien, 61(8), 698–704.
+- Centers for Disease Control and Prevention (2020). Smoking and heart disease and stroke. Retrieved from https://docs.google.com/presentation/d/1qPEiTcT5hdARe0zSVPUw2gLa-lvXnCOFxAzWB8XS0uM/edit#slide=id.g8943ee270c_4_321 on June 19, 2020. 
+- Odom EC, Fang J, Zack M, Moore L, Loustalot F. Associations Between Cardiovascular Health and Health-Related Quality of Life, Behavioral Risk Factor Surveillance System, 2013. Prev Chronic Dis 2016;13:160073. DOI: http://dx.doi.org/10.5888/pcd13.160073
+- Centers for Disease Control and Prevention (2019). Temperature Extremes. Retrieved from  https://www.cdc.gov/climateandhealth/effects/temperature_extremes.htm
+
+## Conclusion:
+
+We can conclude that all the different vectors of the features like Social Economic, Environment, Lifestyle, Health plays a role in the Heart Disease mortality. The top 5 feature Median Household Income(Social Economic), Smoking (Lifestyle), Average Temperature (Environment), Physical Unhealthy/Poor Health (Health) confirms that. 
+   
+Correlation and Causation: Using the research paper and other findings we can say Lifestyle, Environment and Health could be causation while Social Economic could be correlated factor. Though the model doesn't concretely justify the correlation and causation  of the factors/features which affect the Heart Disease Mortality rate .
+
+<<<<<<< HEAD
+=======
 ## Google Slides
 ---
 
@@ -233,6 +286,7 @@ A thorough dashboard description can be found here: [Dashboard_Description.md](D
 
 [technology.md](technology.md)
 
+>>>>>>> master
 1. Jupyter Notebook (IDE) (dependency list in the file [requirements.txt](requirements.txt) 
 2. Python 3 (Data Analysis and ML)
 3. Sqlite (Data Storage)

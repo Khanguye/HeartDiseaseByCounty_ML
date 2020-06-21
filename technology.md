@@ -5,7 +5,7 @@ Excel was used for initial, but brief, data cleaning. This was mainly done becau
 ## Database Storage
 Our project utilizes SQLite as our relation database and query system. This is because our data is neither large nor do we need our data consumers to necessarily view it. Our team created an ERD to visualize the specific tables we are working with: 
 
-![HeartDisease_StateCounty.png](model/diagram/HeartDisease_StateCounty.png)
+![ERD_Heart_Disease.png](model/diagram/ERD_Heart_Disease.png)
 
 ## Machine Learning
 We will be using SciKitLearn as our machine learning library. Specifically, we will be utilizing a Random Forest Model for classification and feature ranking. As of 5/31, our model obtained an overall accuracy of 59%.
