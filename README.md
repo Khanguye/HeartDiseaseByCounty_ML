@@ -270,11 +270,17 @@ Correlation and Causation: Using the research paper and other findings we can sa
 
 [technology.md](technology.md)
 
-1. Jupyter Notebook (IDE) (dependency list in the file [requirements.txt](requirements.txt) 
-2. Python 3 (Data Analysis and ML)
-3. Sqlite (Data Storage)
-4. Googleslide (Presentation)
-5. Tableau (Visualization)
+1. Excel (Data Extraction & Data Validation)
+2. Jupyter Notebook (IDE) (dependency list in the file [requirements.txt](requirements.txt) 
+3. Python 3 (Data Analysis and ML)
+4. Sqlite (Data Storage)
+5. Googleslide (Presentation)
+6. Tableau (Visualization)
+
+## Workflow
+---
+
+![WorkFlow.png](images/WorkFlow.png)
 
 ### Team Communication: Agile Methodology 
 ---
