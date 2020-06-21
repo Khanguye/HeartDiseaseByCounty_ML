@@ -8,10 +8,9 @@ This project focuses on Heart Disease in the United States. Specifically, it att
 We chose this topic because of the wide availability of reliable, sourced data as well as some personal interests in heart disease. We hope that we may learn some insightful results regarding the disease prevelance and the factors which surround it.
 
 ## Questions to Investigate
-
-    What factors impacts the heart disease mortality in US, and their significance? 
-        - Are social economic, environmental, lifestyle, or health measures more impactful?
-        - Is the identified factor correlation or causation of heart disease mortality ? 
+What factors impacts the heart disease mortality in US, and their significance? 
+- Are social economic, environmental, lifestyle, or health measures more impactful?
+- Is the identified factor correlation or causation of heart disease mortality ? 
 
 
 ## Source Data
