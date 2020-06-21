@@ -9,12 +9,10 @@ We chose this topic because of the wide availability of reliable, sourced data a
 
 ## Questions to Investigate
 
-    1. What factors are impacting the heart disease mortality in the US, and their significance? 
+    What factors impacts the heart disease mortality in US, and their significance? 
+        - Are social economic, environmental, lifestyle, or health measures more impactful?
+        - Is the identified factor correlation or causation of heart disease mortality ? 
 
-        a) Are socio-economic, environmental, lifestyle, or health measures more impactful?
-        b) How is heart disease mortality correlated or caused by the identified factors? 
-
-    2.What is the correlation or causation between the identifiedfactors and heart disease? 
 
 ## Source Data
  The majority of our data are from the 'County Health and Rankings Roadmap', a collaboration between the University of Wisconsin and the Robert Woods foundation. The raw data can be found here: https://www.countyhealthrankings.org/explore-health-rankings/rankings-data-documentation. Its original purpose was to rank each county in the United States by the health quality of its residents. For our purposes, the data outlines various health, life-style and environmental metrics by county in the United States. Some examples of these measures includes Adult Smoking Prevelance, Adult Obesity Prevelance, Education Rankings, Excessive Drinking, and others. 
