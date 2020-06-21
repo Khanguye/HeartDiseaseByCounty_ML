@@ -30,8 +30,12 @@ Additionally, our dashboard will include other visualizations to highlight some 
 
 Below is a heat gradient map outling feature rankings relative to their importance in prediciting heart disease mortality.
 
+<<<<<<< HEAD:dashboard/Dashboard_Description.md
+https://heart-disease-by-county.surge.sh/HeartDiseasePCA_FeatureRankings.png
+=======
 ![HeatMap with 5 Component PCA](images/HeartDiseasePCA_FeatureRankings_5.png)
 ![HeatMap with 10 Component PCA](images/HeartDiseasePCA_FeatureRankings_10.png)
 ![HeatMap with 10 Component PCA](images/HeartDiseasePCA_FeatureRankings_20.png)
+>>>>>>> 8f083d010271c14b9de2d54820dacddaa7875f47:Dashboard_Description.md
 
 Lastly, we have a bar chart showing the top features and their relative importance to the model's predicition.
