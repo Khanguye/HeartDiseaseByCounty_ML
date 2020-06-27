@@ -175,6 +175,18 @@ Next, some data scrubbing takes place. This includes investigating using boxplot
 
 Next, target values and feature dataframes are established. In this project, mortality "level" is the target value. Each county is assigned a heart disease mortality level, caluclated using quartiles. Meaning the counties with the lowest levels of heart disease mortality are assigned a level of 1, and the highest quartile a level of four. Our model will attempt to predict which level a county belongs to using a testing dataset after being trained.
 
+**Target data (statistics)**
+
+![box_whisker.png](images/box_whisker.png)
+
+**Target Histogram (Distribution)**
+
+![Distributes.png](images/Distributes.png)
+
+**Target Categories**
+
+![Level.png](images/Levels.png)
+
 ### Splitting in training and testing sets
 ---
 
@@ -221,7 +233,7 @@ The PCA dimension reduction was subsequently fed into the Machine Learning Rando
 
 [HeartDisease_ML_Week2.ipynb](HeartDisease_ML_Week2.ipynb)
 
-**Week 3**: Final ML, Explore Data for Visualization (Dashboard)
+**Week 3 and Week 4**: Final ML, Explore Data for Visualization (Dashboard)
 
 [HeartDisease_ML_Week3.ipynb](HeartDisease_ML_Week3.ipynb)
 
