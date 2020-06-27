@@ -175,6 +175,15 @@ Next, some data scrubbing takes place. This includes investigating using boxplot
 
 Next, target values and feature dataframes are established. In this project, mortality "level" is the target value. Each county is assigned a heart disease mortality level, caluclated using quartiles. Meaning the counties with the lowest levels of heart disease mortality are assigned a level of 1, and the highest quartile a level of four. Our model will attempt to predict which level a county belongs to using a testing dataset after being trained.
 
+Target data (statistics)
+!(box_whisker.png)[images/box_whisker.png]
+
+Target Histogram (Distribution)
+!(Distributes.png)[images/Distributes.png]
+
+Target Categories
+!(Level.png)[images/Levels.png]
+
 ### Splitting in training and testing sets
 ---
 
