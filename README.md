@@ -233,7 +233,7 @@ The PCA dimension reduction was subsequently fed into the Machine Learning Rando
 
 [HeartDisease_ML_Week2.ipynb](HeartDisease_ML_Week2.ipynb)
 
-**Week 3**: Final ML, Explore Data for Visualization (Dashboard)
+**Week 3 and Week 4**: Final ML, Explore Data for Visualization (Dashboard)
 
 [HeartDisease_ML_Week3.ipynb](HeartDisease_ML_Week3.ipynb)
 
